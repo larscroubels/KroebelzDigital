@@ -1,194 +1,456 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#a20f1b">
-  <meta name="description" content="Kroebelz Digital creates modern, responsive websites for businesses and independent professionals. Based in Ingelmunster, Belgium.">
-  <title>Kroebelz Digital | Websites that make an impression</title>
-  <link rel="icon" type="image/jpeg" href="assets/logo-mark.jpeg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="#home" aria-label="Kroebelz Digital home">
-        <img src="assets/logo-mark.jpeg" alt="Kroebelz Digital logo" class="nav-logo">
-        <span class="brand-name">KROEBELZ<span> DIGITAL</span></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="mainNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#process">My approach</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item ms-lg-2"><a class="btn btn-red btn-sm px-3 py-2" href="#contact">Let's talk <span aria-hidden="true">↗</span></a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <section class="hero-section" id="home">
-      <div class="hero-glow"></div>
-      <div class="container position-relative">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-7">
-            <p class="eyebrow"><span class="status-dot"></span> WEB DESIGN & DEVELOPMENT · BELGIUM</p>
-            <img class="hero-logo" src="assets/kroebelz-digital-logo.png" alt="Kroebelz Digital">
-            <h1>Websites that make<br><span>an impression.</span></h1>
-            <p class="hero-copy">I build clean, modern and responsive websites that help your business stand out online. Thoughtful design, smooth experiences and a personal approach.</p>
-            <div class="d-flex flex-wrap gap-3 mt-4">
-              <a href="#contact" class="btn btn-red btn-lg">Start a project <span aria-hidden="true">↗</span></a>
-              <a href="#services" class="btn btn-outline-light btn-lg">Explore my services</a>
-            </div>
-            <div class="hero-meta">
-              <span><span class="meta-line"></span> Based in Ingelmunster, Belgium</span>
-              <span>Available for new projects</span>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="portrait-wrap">
-              <div class="portrait-frame"></div>
-              <img src="assets/lars-croubels.jpeg" alt="Portrait of Lars Croubels" class="portrait">
-              <div class="portrait-tag"><span class="tag-mark">K.</span><div><strong>Lars Croubels</strong><small>Designer & developer</small></div></div>
-              <div class="floating-chip"><span class="chip-icon">✳</span><span>Design with purpose.<br><strong>Built for people.</strong></span></div>
-            </div>
-          </div>
-        </div>
-        <div class="hero-bottom">
-          <span>DESIGN</span><span class="hero-bottom-dot"></span><span>DEVELOPMENT</span><span class="hero-bottom-dot"></span><span>DETAILS THAT MATTER</span>
-          <a href="#services" class="scroll-cue">SCROLL TO EXPLORE <span>↓</span></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-pad services-section" id="services">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#a20f1b" />
+    <meta
+      name="description"
+      content="Kroebelz Digital creates modern, responsive websites for businesses and independent professionals. Based in Ingelmunster, Belgium."
+    />
+    <title>Kroebelz Digital | Websites that make an impression</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo-mark.jpeg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
       <div class="container">
-        <div class="section-heading row align-items-end gy-3">
-          <div class="col-lg-7">
-            <p class="eyebrow dark-eyebrow">WHAT I CAN DO FOR YOU</p>
-            <h2>Good design is more<br>than just <span>looking good.</span></h2>
-          </div>
-          <div class="col-lg-5"><p class="section-intro">Your website should look great, feel easy to use and work perfectly on every screen. That's what I focus on.</p></div>
-        </div>
-        <div class="row g-3 mt-4">
-          <div class="col-md-6 col-lg-4">
-            <article class="service-card">
-              <div class="service-number">01 /</div><div class="service-icon">✳</div>
-              <h3>Website design</h3><p>Distinctive layouts and a clear visual style that fit your brand and make a strong first impression.</p>
-              <span class="service-link">Made to stand out <span>↗</span></span>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="service-card featured-card">
-              <div class="service-number">02 /</div><div class="service-icon">⌘</div>
-              <h3>Web development</h3><p>Responsive websites built with HTML, CSS, JavaScript and Bootstrap, with attention to every detail.</p>
-              <span class="service-link">Made to work everywhere <span>↗</span></span>
-            </article>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="service-card">
-              <div class="service-number">03 /</div><div class="service-icon">↗</div>
-              <h3>Website refresh</h3><p>Give your existing website a fresh look, improve the user experience and make it feel up to date.</p>
-              <span class="service-link">A fresh start <span>↗</span></span>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section section-pad" id="about">
-      <div class="container">
-        <div class="row align-items-center gy-5">
-          <div class="col-lg-5">
-            <div class="about-image-wrap">
-              <img src="assets/lars-croubels.jpeg" alt="Lars Croubels, founder of Kroebelz Digital" class="about-image">
-              <div class="about-stamp"><span>INDEPENDENT</span><strong>BY DESIGN</strong><span>BASED IN BELGIUM</span></div>
-            </div>
-          </div>
-          <div class="col-lg-6 offset-lg-1">
-            <p class="eyebrow">A LITTLE ABOUT ME</p>
-            <h2>Hey, I'm Lars.<br><span>I make the web</span> work for you.</h2>
-            <p class="about-lead">I'm a 24-year-old digital creative from Ingelmunster, Belgium, with a passion for building websites that look good and make sense.</p>
-            <p class="about-copy">I studied Digital Design at Howest, where I developed my eye for visual design and digital experiences. I enjoy bringing ideas to life, from the first sketch to a website that is ready to meet the world.</p>
-            <p class="about-copy">For me, a good project starts with listening. I want to understand what you need and create something that feels right for you and your customers.</p>
-            <div class="skill-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span><span>Responsive design</span></div>
-            <a href="#contact" class="text-link mt-4 d-inline-flex">Have an idea? Let's talk <span>↗</span></a>
-          </div>
+        <a
+          class="navbar-brand d-flex align-items-center"
+          href="#home"
+          aria-label="Kroebelz Digital home"
+        >
+          <img
+            src="assets/logotrans.png"
+            alt="Kroebelz Digital logo"
+            class="nav-logo-full"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#process">My approach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-red btn-sm px-3 py-2" href="#contact"
+                >Let's talk <span aria-hidden="true">↗</span></a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section class="process-section section-pad" id="process">
-      <div class="container">
-        <div class="row align-items-end gy-3 mb-5">
-          <div class="col-lg-7"><p class="eyebrow dark-eyebrow">SIMPLE FROM START TO FINISH</p><h2>A good website starts<br>with a <span>good conversation.</span></h2></div>
-          <div class="col-lg-5"><p class="section-intro">No confusing process. We'll work together step by step to turn your idea into something real.</p></div>
-        </div>
-        <div class="process-grid">
-          <div class="process-step"><span class="process-count">01</span><div class="process-rule"></div><h3>Let's talk</h3><p>We discuss your idea, goals and what you need from your website.</p></div>
-          <div class="process-step"><span class="process-count">02</span><div class="process-rule"></div><h3>Plan & design</h3><p>I'll shape the structure and visual direction around your business.</p></div>
-          <div class="process-step"><span class="process-count">03</span><div class="process-rule"></div><h3>Build & refine</h3><p>Your website comes to life, and we fine-tune the details together.</p></div>
-          <div class="process-step"><span class="process-count">04</span><div class="process-rule"></div><h3>Ready to launch</h3><p>We check everything and get your website ready to go online.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact-section section-pad" id="contact">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-5">
-            <p class="eyebrow">LET'S MAKE SOMETHING GOOD</p>
-            <h2>Have a project<br>in <span>mind?</span></h2>
-            <p class="contact-intro">Tell me a little about your idea. Whether you need a brand-new website or want to improve an existing one, I'd love to hear from you.</p>
-            <div class="contact-details">
-              <a href="mailto:info@kroebelzdigital.be" class="contact-detail"><span class="contact-detail-icon">↗</span><span><small>EMAIL ME</small><strong>info@kroebelzdigital.be</strong></span></a>
-              <a href="https://wa.me/32497306770" target="_blank" rel="noopener" class="contact-detail"><span class="contact-detail-icon">◉</span><span><small>MESSAGE ME ON WHATSAPP</small><strong>+32 497 30 67 70</strong></span></a>
-              <div class="contact-detail"><span class="contact-detail-icon">⌖</span><span><small>BASED IN</small><strong>Ingelmunster, Belgium</strong></span></div>
-            </div>
-          </div>
-          <div class="col-lg-6 offset-lg-1">
-            <form id="contactForm" class="contact-form">
-              <div class="form-top"><span>PROJECT ENQUIRY</span><span class="form-required">* Required fields</span></div>
-              <div class="row g-3">
-                <div class="col-md-6"><label for="name" class="form-label">Your name *</label><input type="text" class="form-control" id="name" name="name" placeholder="Jane Smith" required></div>
-                <div class="col-md-6"><label for="email" class="form-label">Your email *</label><input type="email" class="form-control" id="email" name="email" placeholder="jane@company.com" required></div>
-                <div class="col-12"><label for="project" class="form-label">What do you need?</label><select class="form-select" id="project" name="project"><option value="New website">A new website</option><option value="Website redesign">A website redesign</option><option value="Other project">Something else</option></select></div>
-                <div class="col-12"><label for="message" class="form-label">Tell me about your project *</label><textarea class="form-control" id="message" name="message" rows="5" placeholder="A little about your idea, your business and what you have in mind..." required></textarea></div>
-                <div class="col-12"><button type="submit" class="btn btn-red btn-lg w-100">Send project enquiry <span aria-hidden="true">↗</span></button><p class="form-note">This opens your email app with your message ready to send.</p></div>
+    <main>
+      <section class="hero-section" id="home">
+        <div class="hero-glow"></div>
+        <div class="container position-relative">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-7">
+              <p class="eyebrow">
+                <span class="status-dot"></span> WEB DESIGN & DEVELOPMENT ·
+                BELGIUM
+              </p>
+              <h1>Websites that make<br /><span>an impression.</span></h1>
+              <p class="hero-copy">
+                I build clean, modern and responsive websites that help your
+                business stand out online. Thoughtful design, smooth experiences
+                and a personal approach.
+              </p>
+              <div class="d-flex flex-wrap gap-3 mt-4">
+                <a href="#contact" class="btn btn-red btn-lg"
+                  >Start a project <span aria-hidden="true">↗</span></a
+                >
+                <a href="#services" class="btn btn-outline-light btn-lg"
+                  >Explore my services</a
+                >
               </div>
-              <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-            </form>
+              <div class="hero-meta">
+                <span
+                  ><span class="meta-line"></span> Based in Ingelmunster,
+                  Belgium</span
+                >
+                <span>Available for new projects</span>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="portrait-wrap">
+                <div class="portrait-frame"></div>
+                <img
+                  src="assets/lars-croubels.jpeg"
+                  alt="Portrait of Lars Croubels"
+                  class="portrait"
+                />
+                <div class="portrait-tag">
+                  <span class="tag-mark">K.</span>
+                  <div>
+                    <strong>Lars Croubels</strong
+                    ><small>Designer & developer</small>
+                  </div>
+                </div>
+                <div class="floating-chip">
+                  <span class="chip-icon">✳</span
+                  ><span
+                    >Design with purpose.<br /><strong
+                      >Built for people.</strong
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-bottom">
+            <span>DESIGN</span><span class="hero-bottom-dot"></span
+            ><span>DEVELOPMENT</span><span class="hero-bottom-dot"></span
+            ><span>DETAILS THAT MATTER</span>
+            <a href="#services" class="scroll-cue"
+              >SCROLL TO EXPLORE <span>↓</span></a
+            >
           </div>
         </div>
+      </section>
+
+      <section class="section-pad services-section" id="services">
+        <div class="container">
+          <div class="section-heading row align-items-end gy-3">
+            <div class="col-lg-7">
+              <p class="eyebrow dark-eyebrow">WHAT I CAN DO FOR YOU</p>
+              <h2>
+                Good design is more<br />than just <span>looking good.</span>
+              </h2>
+            </div>
+            <div class="col-lg-5">
+              <p class="section-intro">
+                Your website should look great, feel easy to use and work
+                perfectly on every screen. That's what I focus on.
+              </p>
+            </div>
+          </div>
+          <div class="row g-3 mt-4">
+            <div class="col-md-6 col-lg-4">
+              <article class="service-card">
+                <div class="service-number">01 /</div>
+                <div class="service-icon">✳</div>
+                <h3>Website design</h3>
+                <p>
+                  Distinctive layouts and a clear visual style that fit your
+                  brand and make a strong first impression.
+                </p>
+                <span class="service-link"
+                  >Made to stand out <span>↗</span></span
+                >
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="service-card featured-card">
+                <div class="service-number">02 /</div>
+                <div class="service-icon">⌘</div>
+                <h3>Web development</h3>
+                <p>
+                  Responsive websites built with HTML, CSS, JavaScript and
+                  Bootstrap, with attention to every detail.
+                </p>
+                <span class="service-link"
+                  >Made to work everywhere <span>↗</span></span
+                >
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="service-card">
+                <div class="service-number">03 /</div>
+                <div class="service-icon">↗</div>
+                <h3>Website refresh</h3>
+                <p>
+                  Give your existing website a fresh look, improve the user
+                  experience and make it feel up to date.
+                </p>
+                <span class="service-link">A fresh start <span>↗</span></span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section section-pad" id="about">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-lg-5">
+              <div class="about-image-wrap">
+                <img
+                  src="assets/lars-croubels.jpeg"
+                  alt="Lars Croubels, founder of Kroebelz Digital"
+                  class="about-image"
+                />
+                <div class="about-stamp">
+                  <span>INDEPENDENT</span><strong>BY DESIGN</strong
+                  ><span>BASED IN BELGIUM</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <p class="eyebrow">A LITTLE ABOUT ME</p>
+              <h2>
+                Hey, I'm Lars.<br /><span>I make the web</span> work for you.
+              </h2>
+              <p class="about-lead">
+                I'm a 24-year-old digital creative from Ingelmunster, Belgium,
+                with a passion for building websites that look good and make
+                sense.
+              </p>
+              <p class="about-copy">
+                I studied Digital Design at Howest, where I developed my eye for
+                visual design and digital experiences. I enjoy bringing ideas to
+                life, from the first sketch to a website that is ready to meet
+                the world.
+              </p>
+              <p class="about-copy">
+                For me, a good project starts with listening. I want to
+                understand what you need and create something that feels right
+                for you and your customers.
+              </p>
+              <div class="skill-list">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span
+                ><span>Bootstrap</span><span>Responsive design</span>
+              </div>
+              <a href="#contact" class="text-link mt-4 d-inline-flex"
+                >Have an idea? Let's talk <span>↗</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section section-pad" id="process">
+        <div class="container">
+          <div class="row align-items-end gy-3 mb-5">
+            <div class="col-lg-7">
+              <p class="eyebrow dark-eyebrow">SIMPLE FROM START TO FINISH</p>
+              <h2>
+                A good website starts<br />with a
+                <span>good conversation.</span>
+              </h2>
+            </div>
+            <div class="col-lg-5">
+              <p class="section-intro">
+                No confusing process. We'll work together step by step to turn
+                your idea into something real.
+              </p>
+            </div>
+          </div>
+          <div class="process-grid">
+            <div class="process-step">
+              <span class="process-count">01</span>
+              <div class="process-rule"></div>
+              <h3>Let's talk</h3>
+              <p>
+                We discuss your idea, goals and what you need from your website.
+              </p>
+            </div>
+            <div class="process-step">
+              <span class="process-count">02</span>
+              <div class="process-rule"></div>
+              <h3>Plan & design</h3>
+              <p>
+                I'll shape the structure and visual direction around your
+                business.
+              </p>
+            </div>
+            <div class="process-step">
+              <span class="process-count">03</span>
+              <div class="process-rule"></div>
+              <h3>Build & refine</h3>
+              <p>
+                Your website comes to life, and we fine-tune the details
+                together.
+              </p>
+            </div>
+            <div class="process-step">
+              <span class="process-count">04</span>
+              <div class="process-rule"></div>
+              <h3>Ready to launch</h3>
+              <p>
+                We check everything and get your website ready to go online.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-pad" id="contact">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <p class="eyebrow">LET'S MAKE SOMETHING GOOD</p>
+              <h2>Have a project<br />in <span>mind?</span></h2>
+              <p class="contact-intro">
+                Tell me a little about your idea. Whether you need a brand-new
+                website or want to improve an existing one, I'd love to hear
+                from you.
+              </p>
+              <div class="contact-details">
+                <a href="mailto:info@kroebelzdigital.be" class="contact-detail"
+                  ><span class="contact-detail-icon">↗</span
+                  ><span
+                    ><small>EMAIL ME</small
+                    ><strong>info@kroebelzdigital.be</strong></span
+                  ></a
+                >
+                <a
+                  href="https://wa.me/32497306770"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-detail"
+                  ><span class="contact-detail-icon">◉</span
+                  ><span
+                    ><small>MESSAGE ME ON WHATSAPP</small
+                    ><strong>+32 497 30 67 70</strong></span
+                  ></a
+                >
+                <div class="contact-detail">
+                  <span class="contact-detail-icon">⌖</span
+                  ><span
+                    ><small>BASED IN</small
+                    ><strong>Ingelmunster, Belgium</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 offset-lg-1">
+              <form id="contactForm" class="contact-form">
+                <div class="form-top">
+                  <span>PROJECT ENQUIRY</span
+                  ><span class="form-required">* Required fields</span>
+                </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="name" class="form-label">Your name *</label
+                    ><input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      name="name"
+                      placeholder="Jane Smith"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Your email *</label
+                    ><input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email"
+                      placeholder="jane@company.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label for="project" class="form-label"
+                      >What do you need?</label
+                    ><select class="form-select" id="project" name="project">
+                      <option value="New website">A new website</option>
+                      <option value="Website redesign">
+                        A website redesign
+                      </option>
+                      <option value="Other project">Something else</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <label for="message" class="form-label"
+                      >Tell me about your project *</label
+                    ><textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="A little about your idea, your business and what you have in mind..."
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-red btn-lg w-100">
+                      Send project enquiry <span aria-hidden="true">↗</span>
+                    </button>
+                    <p class="form-note">
+                      This opens your email app with your message ready to send.
+                    </p>
+                  </div>
+                </div>
+                <p
+                  id="formStatus"
+                  class="form-status"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <a href="#home" class="footer-brand"
+            ><img src="assets/logo-mark.jpeg" alt="Kroebelz Digital logo"
+          /></a>
+          <a href="#home" class="back-top">BACK TO TOP ↑</a>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year"></span> Kroebelz Digital. All rights
+            reserved.</span
+          ><span>Made in Belgium by Lars Croubels.</span>
+        </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-main">
-        <a href="#home" class="footer-brand"><img src="assets/logo-mark.jpeg" alt=""><span>KROEBELZ<span class="footer-brand-red"> DIGITAL</span></span></a>
-        <p>Thoughtful websites. Made with care.</p>
-        <a href="#home" class="back-top">BACK TO TOP ↑</a>
-      </div>
-      <div class="footer-bottom"><span>© <span id="year"></span> Kroebelz Digital. All rights reserved.</span><span>Made in Belgium by Lars Croubels.</span></div>
-    </div>
-  </footer>
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/32497306770"
+      target="_blank"
+      rel="noopener"
+      aria-label="Contact Lars on WhatsApp"
+    >
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path
+          d="M16.02 3C8.85 3 3.02 8.75 3.02 15.83c0 2.26.6 4.47 1.75 6.4L3 29l7.02-1.82a13.1 13.1 0 0 0 6 1.44h.01c7.17 0 13-5.76 13-12.84 0-3.43-1.35-6.65-3.81-9.08A13.02 13.02 0 0 0 16.02 3Zm0 23.45h-.01a10.9 10.9 0 0 1-5.24-1.34l-.38-.21-4.16 1.08 1.11-4.02-.25-.41a10.55 10.55 0 0 1-1.62-5.72c0-5.83 4.74-10.57 10.56-10.57 2.82 0 5.47 1.1 7.46 3.1a10.47 10.47 0 0 1 3.1 7.46c0 5.83-4.74 10.63-10.57 10.63Zm5.8-7.95c-.32-.16-1.9-.93-2.2-1.04-.3-.1-.51-.16-.73.16-.21.32-.83 1.04-1.02 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.56-.95-.82-1.59-1.83-1.78-2.15-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.11 1.32 3.32c.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.4.19-1.53-.08-.14-.29-.22-.62-.38Z"
+        />
+      </svg>
+    </a>
 
-  <a class="whatsapp-float" href="https://wa.me/32497306770" target="_blank" rel="noopener" aria-label="Contact Lars on WhatsApp">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.02 3C8.85 3 3.02 8.75 3.02 15.83c0 2.26.6 4.47 1.75 6.4L3 29l7.02-1.82a13.1 13.1 0 0 0 6 1.44h.01c7.17 0 13-5.76 13-12.84 0-3.43-1.35-6.65-3.81-9.08A13.02 13.02 0 0 0 16.02 3Zm0 23.45h-.01a10.9 10.9 0 0 1-5.24-1.34l-.38-.21-4.16 1.08 1.11-4.02-.25-.41a10.55 10.55 0 0 1-1.62-5.72c0-5.83 4.74-10.57 10.56-10.57 2.82 0 5.47 1.1 7.46 3.1a10.47 10.47 0 0 1 3.1 7.46c0 5.83-4.74 10.63-10.57 10.63Zm5.8-7.95c-.32-.16-1.9-.93-2.2-1.04-.3-.1-.51-.16-.73.16-.21.32-.83 1.04-1.02 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.56-.95-.82-1.59-1.83-1.78-2.15-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.11 1.32 3.32c.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.4.19-1.53-.08-.14-.29-.22-.62-.38Z"/></svg>
-  </a>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
