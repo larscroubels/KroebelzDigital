@@ -50,21 +50,38 @@
         <div class="collapse navbar-collapse" id="mainNav">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a
+                class="nav-link"
+                href="#about"
+                data-nl="Wie ben ik"
+                data-en="Who am I"
+                >Wie ben ik</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#process">My approach</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a
+                class="nav-link"
+                href="my-work.html"
+                data-nl="Mijn werk"
+                data-en="My work"
+                >Mijn werk</a
+              >
             </li>
             <li class="nav-item ms-lg-2">
-              <a class="btn btn-red btn-sm px-3 py-2" href="#contact"
-                >Let's talk <span aria-hidden="true">↗</span></a
+              <a
+                class="btn btn-red btn-sm px-3 py-2"
+                href="#contact"
+                data-nl="Contact"
+                data-en="Contact"
+                >Contact <span aria-hidden="true">↗</span></a
               >
+            </li>
+            <li class="nav-item ms-lg-3">
+              <div class="language-switcher">
+                <button class="lang-btn active" data-lang="nl">NL</button>
+                <span class="lang-divider">|</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+              </div>
             </li>
           </ul>
         </div>
@@ -73,69 +90,75 @@
 
     <main>
       <section class="hero-section" id="home">
+        <div class="portrait-wrap-fullwidth">
+          <img src="assets/code.avif" alt="Code" class="portrait" />
+        </div>
         <div class="hero-glow"></div>
         <div class="container position-relative">
           <div class="row align-items-center gy-5">
-            <div class="col-lg-7">
-              <p class="eyebrow">
-                <span class="status-dot"></span> WEB DESIGN & DEVELOPMENT ·
-                BELGIUM
-              </p>
-              <h1>Websites that make<br /><span>an impression.</span></h1>
-              <p class="hero-copy">
-                I build clean, modern and responsive websites that help your
-                business stand out online. Thoughtful design, smooth experiences
-                and a personal approach.
-              </p>
-              <div class="d-flex flex-wrap gap-3 mt-4">
-                <a href="#contact" class="btn btn-red btn-lg"
-                  >Start a project <span aria-hidden="true">↗</span></a
-                >
-                <a href="#services" class="btn btn-outline-light btn-lg"
-                  >Explore my services</a
-                >
-              </div>
-              <div class="hero-meta">
+            <div class="col-lg-6">
+              <h1>
                 <span
-                  ><span class="meta-line"></span> Based in Ingelmunster,
-                  Belgium</span
+                  style="color: #fff"
+                  data-nl="Websites die"
+                  data-en="Websites that make an"
+                  >Websites die</span
+                ><br /><span data-nl="indruk" data-en="impression">indruk</span>
+                <span style="color: #fff" data-nl="maken." data-en=""
+                  >maken.</span
                 >
-                <span>Available for new projects</span>
-              </div>
+              </h1>
             </div>
-            <div class="col-lg-5">
-              <div class="portrait-wrap">
-                <div class="portrait-frame"></div>
-                <img
-                  src="assets/lars-croubels.jpeg"
-                  alt="Portrait of Lars Croubels"
-                  class="portrait"
-                />
-                <div class="portrait-tag">
-                  <span class="tag-mark">K.</span>
-                  <div>
-                    <strong>Lars Croubels</strong
-                    ><small>Designer & developer</small>
-                  </div>
-                </div>
-                <div class="floating-chip">
-                  <span class="chip-icon">✳</span
-                  ><span
-                    >Design with purpose.<br /><strong
-                      >Built for people.</strong
-                    ></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="hero-bottom">
-            <span>DESIGN</span><span class="hero-bottom-dot"></span
-            ><span>DEVELOPMENT</span><span class="hero-bottom-dot"></span
-            ><span>DETAILS THAT MATTER</span>
-            <a href="#services" class="scroll-cue"
-              >SCROLL TO EXPLORE <span>↓</span></a
+            <div
+              class="col-lg-6 d-flex flex-column justify-content-center align-items-center"
             >
+              <p
+                class="hero-copy"
+                data-nl="Ik bouw nette, moderne en responsieve websites die uw bedrijf online helpen op te vallen. Doordachte design, soepele ervaring en een persoonlijke benadering."
+                data-en="I build clean, modern and responsive websites that help your business stand out online. Thoughtful design, smooth experiences and a personal approach."
+              >
+                Ik bouw nette, moderne en responsieve websites die uw bedrijf
+                online helpen op te vallen.
+              </p>
+              <div class="hero-meta mb-3" style="margin-top: 0">
+                <span
+                  ><span class="meta-line"></span>
+                  <span
+                    data-nl="Gebaseerd in Ingelmunster,"
+                    data-en="Based in Ingelmunster,"
+                    >Ingelmunster,</span
+                  >
+                  <span data-nl="België" data-en="Belgium">België</span></span
+                >
+                <span
+                  ><span class="status-dot-green"></span
+                  ><span
+                    data-nl="Beschikbaar voor nieuwe projecten"
+                    data-en="Available for new projects"
+                    >Beschikbaar voor nieuwe projecten</span
+                  ></span
+                >
+              </div>
+              <div
+                class="d-flex flex-wrap gap-3 justify-content-center"
+                style="width: auto; margin-top: 30px"
+              >
+                <a
+                  href="#contact"
+                  class="btn btn-red btn-lg"
+                  data-nl="Laten we praten"
+                  data-en="Let's talk"
+                  >Laten we praten</a
+                >
+                <a
+                  href="my-work.html"
+                  class="btn btn-outline-light btn-lg"
+                  data-nl="Bekijk mijn werk"
+                  data-en="Explore my work"
+                  >Bekijk mijn werk</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -144,57 +167,76 @@
         <div class="container">
           <div class="section-heading row align-items-end gy-3">
             <div class="col-lg-7">
-              <p class="eyebrow dark-eyebrow">WHAT I CAN DO FOR YOU</p>
-              <h2>
-                Good design is more<br />than just <span>looking good.</span>
+              <p
+                class="eyebrow dark-eyebrow"
+                data-nl="WAT IK VOOR U KAN DOEN"
+                data-en="WHAT I CAN DO FOR YOU"
+              >
+                WAT IK VOOR U KAN DOEN
+              </p>
+              <h2 data-nl="Goed design is meer" data-en="Good design is more">
+                Goed design is meer<br /><span
+                  data-nl="dan alleen er goed uitzien."
+                  data-en="than just looking good."
+                  >dan alleen er goed uitzien.</span
+                >
               </h2>
             </div>
             <div class="col-lg-5">
-              <p class="section-intro">
-                Your website should look great, feel easy to use and work
-                perfectly on every screen. That's what I focus on.
+              <p
+                class="section-intro"
+                data-nl="Uw website moet er geweldig uitzien, gemakkelijk te gebruiken zijn en perfect op elk scherm werken. Daarop focus ik."
+                data-en="Your website should look great, feel easy to use and work perfectly on every screen. That's what I focus on."
+              >
+                Uw website moet er geweldig uitzien, gemakkelijk te gebruiken
+                zijn en perfect op elk scherm werken. Daarop focus ik.
               </p>
             </div>
           </div>
           <div class="row g-3 mt-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <article class="service-card">
-                <div class="service-number">01 /</div>
                 <div class="service-icon">✳</div>
-                <h3>Website design</h3>
-                <p>
-                  Distinctive layouts and a clear visual style that fit your
-                  brand and make a strong first impression.
-                </p>
-                <span class="service-link"
-                  >Made to stand out <span>↗</span></span
+                <h3 data-nl="Website design" data-en="Website design">
+                  Website design
+                </h3>
+                <p
+                  data-nl="Onderscheidende lay-outs en een duidelijke visuele stijl die bij uw merk passen en een sterke eerste indruk maken."
+                  data-en="Distinctive layouts and a clear visual style that fit your brand and make a strong first impression."
                 >
+                  Onderscheidende lay-outs en een duidelijke visuele stijl die
+                  bij uw merk passen en een sterke eerste indruk maken.
+                </p>
               </article>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="service-card featured-card">
-                <div class="service-number">02 /</div>
-                <div class="service-icon">⌘</div>
-                <h3>Web development</h3>
-                <p>
-                  Responsive websites built with HTML, CSS, JavaScript and
-                  Bootstrap, with attention to every detail.
-                </p>
-                <span class="service-link"
-                  >Made to work everywhere <span>↗</span></span
-                >
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4">
               <article class="service-card">
-                <div class="service-number">03 /</div>
-                <div class="service-icon">↗</div>
-                <h3>Website refresh</h3>
-                <p>
-                  Give your existing website a fresh look, improve the user
-                  experience and make it feel up to date.
+                <div class="service-icon">⌘</div>
+                <h3 data-nl="Web development" data-en="Web development">
+                  Web development
+                </h3>
+                <p
+                  data-nl="Responsieve websites gebouwd met HTML, CSS, JavaScript en Bootstrap, met aandacht voor elk detail."
+                  data-en="Responsive websites built with HTML, CSS, JavaScript and Bootstrap, with attention to every detail."
+                >
+                  Responsieve websites gebouwd met HTML, CSS, JavaScript en
+                  Bootstrap, met aandacht voor elk detail.
                 </p>
-                <span class="service-link">A fresh start <span>↗</span></span>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <article class="service-card">
+                <div class="service-icon">↗</div>
+                <h3 data-nl="Website refresh" data-en="Website refresh">
+                  Website refresh
+                </h3>
+                <p
+                  data-nl="Geef uw bestaande website een frisse look, verbeter de gebruikerservaring en maak het voelen actueel."
+                  data-en="Give your existing website a fresh look, improve the user experience and make it feel up to date."
+                >
+                  Geef uw bestaande website een frisse look, verbeter de
+                  gebruikerservaring en maak het voelen actueel.
+                </p>
               </article>
             </div>
           </div>
@@ -207,43 +249,91 @@
             <div class="col-lg-5">
               <div class="about-image-wrap">
                 <img
-                  src="assets/lars-croubels.jpeg"
+                  src="assets/foto .jpeg"
                   alt="Lars Croubels, founder of Kroebelz Digital"
                   class="about-image"
                 />
-                <div class="about-stamp">
-                  <span>INDEPENDENT</span><strong>BY DESIGN</strong
-                  ><span>BASED IN BELGIUM</span>
+                <div class="portrait-tag">
+                  <span class="tag-mark">K.</span>
+                  <div>
+                    <strong>Lars Croubels</strong
+                    ><small>Designer & developer</small>
+                  </div>
+                </div>
+                <div class="floating-chip">
+                  <span class="chip-icon">✳</span
+                  ><span
+                    data-nl="Design met doel."
+                    data-en="Design with purpose."
+                    >Design met doel.<br /><strong
+                      data-nl="Gebouwd voor mensen."
+                      data-en="Built for people."
+                      >Gebouwd voor mensen.</strong
+                    ></span
+                  >
                 </div>
               </div>
             </div>
             <div class="col-lg-6 offset-lg-1">
-              <p class="eyebrow">A LITTLE ABOUT ME</p>
-              <h2>
-                Hey, I'm Lars.<br /><span>I make the web</span> work for you.
+              <p
+                class="eyebrow"
+                data-nl="EVEN OVER MIJ"
+                data-en="A LITTLE ABOUT ME"
+              >
+                EVEN OVER MIJ
+              </p>
+              <h2 data-nl="Hé, ik ben Lars." data-en="Hey, I'm Lars.">
+                Hé, ik ben Lars.<br /><span
+                  data-nl="Ik laat het web"
+                  data-en="I make the web"
+                  >Ik laat het web</span
+                >
+                <span data-nl="voor jou werken." data-en="work for you."
+                  >voor jou werken.</span
+                >
               </h2>
-              <p class="about-lead">
-                I'm a 24-year-old digital creative from Ingelmunster, Belgium,
-                with a passion for building websites that look good and make
-                sense.
+              <p
+                class="about-lead"
+                data-nl="Ik ben een 24-jarige uit Ingelmunster, België, met een passie voor het bouwen van websites die er goed uitzien en zin hebben."
+                data-en="I'm a 24-year-old digital creative from Ingelmunster, Belgium, with a passion for building websites that look good and make sense."
+              >
+                Ik ben een 24-jarige uit Ingelmunster, België, met een passie
+                voor het bouwen van websites die er goed uitzien en een
+                meerwaarde bieden.
               </p>
-              <p class="about-copy">
-                I studied Digital Design at Howest, where I developed my eye for
-                visual design and digital experiences. I enjoy bringing ideas to
-                life, from the first sketch to a website that is ready to meet
-                the world.
+              <p
+                class="about-copy"
+                data-nl="Ik heb Digital Design gestudeerd bij Howest, waar ik mijn oog voor visueel design en digitale ervaringen heb ontwikkeld. Ik geniet ervan om ideeën tot leven te brengen, van de eerste schets tot een website die klaar is om de wereld tegemoet te treden."
+                data-en="I studied Digital Design at Howest, where I developed my eye for visual design and digital experiences. I enjoy bringing ideas to life, from the first sketch to a website that is ready to meet the world."
+              >
+                Ik heb Digitale Vormgeving gestudeerd bij Howest, waar ik mijn
+                oog voor visueel design en digitale ervaringen heb ontwikkeld.
+                Ik geniet ervan om ideeën tot leven te brengen, van de eerste
+                schets tot een website die klaar is om de wereld tegemoet te
+                treden.
               </p>
-              <p class="about-copy">
-                For me, a good project starts with listening. I want to
-                understand what you need and create something that feels right
-                for you and your customers.
+              <p
+                class="about-copy"
+                data-nl="Voor mij begint een goed project met luisteren. Ik wil begrijpen wat je nodig hebt en iets creëren dat zich goed voelt voor jou en je klanten."
+                data-en="For me, a good project starts with listening. I want to understand what you need and create something that feels right for you and your customers."
+              >
+                Voor mij begint een goed project met luisteren. Ik wil begrijpen
+                wat je nodig hebt en iets creëren dat zich goed voelt voor jou
+                en je klanten.
               </p>
               <div class="skill-list">
                 <span>HTML</span><span>CSS</span><span>JavaScript</span
-                ><span>Bootstrap</span><span>Responsive design</span>
+                ><span>Bootstrap</span
+                ><span data-nl="Responsive design" data-en="Responsive design"
+                  >Responsive design</span
+                >
               </div>
-              <a href="#contact" class="text-link mt-4 d-inline-flex"
-                >Have an idea? Let's talk <span>↗</span></a
+              <a
+                href="#contact"
+                class="text-link mt-4 d-inline-flex"
+                data-nl="Heb je een idee? Laten we praten"
+                data-en="Have an idea? Let's talk"
+                >Heb je een idee? Laten we praten <span>↗</span></a
               >
             </div>
           </div>
@@ -254,16 +344,31 @@
         <div class="container">
           <div class="row align-items-end gy-3 mb-5">
             <div class="col-lg-7">
-              <p class="eyebrow dark-eyebrow">SIMPLE FROM START TO FINISH</p>
-              <h2>
-                A good website starts<br />with a
-                <span>good conversation.</span>
+              <p
+                class="eyebrow dark-eyebrow"
+                data-nl="SIMPEL VAN BEGIN TOT EINDE"
+                data-en="SIMPLE FROM START TO FINISH"
+              >
+                SIMPEL VAN BEGIN TOT EINDE
+              </p>
+              <h2
+                data-nl="Een goede website begint"
+                data-en="A good website starts"
+              >
+                Een goede website begint<br />met een
+                <span data-nl="goed gesprek." data-en="good conversation."
+                  >goed gesprek.</span
+                >
               </h2>
             </div>
             <div class="col-lg-5">
-              <p class="section-intro">
-                No confusing process. We'll work together step by step to turn
-                your idea into something real.
+              <p
+                class="section-intro"
+                data-nl="Geen ingewikkeld proces. We werken stap voor stap samen om uw idee in iets echts om te zetten."
+                data-en="No confusing process. We'll work together step by step to turn your idea into something real."
+              >
+                Geen ingewikkeld proces. We werken stap voor stap samen om uw
+                idee in iets echts om te zetten.
               </p>
             </div>
           </div>
@@ -271,37 +376,72 @@
             <div class="process-step">
               <span class="process-count">01</span>
               <div class="process-rule"></div>
-              <h3>Let's talk</h3>
-              <p>
-                We discuss your idea, goals and what you need from your website.
+              <h3 data-nl="Laten we praten" data-en="Let's talk">
+                Laten we praten
+              </h3>
+              <p
+                data-nl="We bespreken uw idee, doelen en wat u nodig hebt van uw website."
+                data-en="We discuss your idea, goals and what you need from your website."
+              >
+                We bespreken uw idee, doelen en wat u verwacht van uw website.
               </p>
             </div>
             <div class="process-step">
               <span class="process-count">02</span>
               <div class="process-rule"></div>
-              <h3>Plan & design</h3>
-              <p>
-                I'll shape the structure and visual direction around your
-                business.
+              <h3 data-nl="Plan & ontwerp" data-en="Plan & design">
+                Plan & ontwerp
+              </h3>
+              <p
+                data-nl="Ik zal de structuur en visuele richting rond uw bedrijf vormgeven."
+                data-en="I'll shape the structure and visual direction around your business."
+              >
+                Ik zal de structuur en visuele richting rond uw bedrijf
+                vormgeven.
               </p>
             </div>
             <div class="process-step">
               <span class="process-count">03</span>
               <div class="process-rule"></div>
-              <h3>Build & refine</h3>
-              <p>
-                Your website comes to life, and we fine-tune the details
-                together.
+              <h3 data-nl="Bouw & verfijn" data-en="Build & refine">
+                Bouw & verfijn
+              </h3>
+              <p
+                data-nl="Uw website komt tot leven, en we verfijnen samen de details."
+                data-en="Your website comes to life, and we fine-tune the details together."
+              >
+                Uw website komt tot leven, en we verfijnen samen de details.
               </p>
             </div>
             <div class="process-step">
               <span class="process-count">04</span>
               <div class="process-rule"></div>
-              <h3>Ready to launch</h3>
-              <p>
-                We check everything and get your website ready to go online.
+              <h3 data-nl="Klaar om te lanceren" data-en="Ready to launch">
+                Klaar om te lanceren
+              </h3>
+              <p
+                data-nl="We controleren alles en maken uw website klaar om online te gaan."
+                data-en="We check everything and get your website ready to go online."
+              >
+                We controleren alles en maken uw website klaar om online te
+                gaan.
               </p>
             </div>
+          </div>
+          <div
+            style="
+              text-align: center;
+              margin-top: 60px;
+              color: #777;
+              font-size: 14px;
+            "
+          >
+            <p
+              data-nl="Dit alles gebeurt normaliter binnen een week."
+              data-en="All of this typically happens within a week."
+            >
+              Dit alles gebeurt normaliter binnen een week.
+            </p>
           </div>
         </div>
       </section>
@@ -310,18 +450,32 @@
         <div class="container">
           <div class="row g-5">
             <div class="col-lg-5">
-              <p class="eyebrow">LET'S MAKE SOMETHING GOOD</p>
-              <h2>Have a project<br />in <span>mind?</span></h2>
-              <p class="contact-intro">
-                Tell me a little about your idea. Whether you need a brand-new
-                website or want to improve an existing one, I'd love to hear
-                from you.
+              <p
+                class="eyebrow"
+                data-nl="LATEN WE IETS GOEDS MAKEN"
+                data-en="LET'S MAKE SOMETHING GOOD"
+              >
+                LATEN WE IETS GOEDS MAKEN
+              </p>
+              <h2 data-nl="Heb je een project" data-en="Have a project">
+                Heb je een project<br />in
+                <span data-nl="gedachten?" data-en="mind?">gedachten?</span>
+              </h2>
+              <p
+                class="contact-intro"
+                data-nl="Vertel me iets over uw idee. Of u nu een gloednieuwe website nodig hebt of een bestaande wilt verbeteren, ik hoor graag van u."
+                data-en="Tell me a little about your idea. Whether you need a brand-new website or want to improve an existing one, I'd love to hear from you."
+              >
+                Vertel me iets over uw idee. Of u nu een gloednieuwe website
+                nodig hebt of een bestaande wilt verbeteren, ik hoor graag van
+                u.
               </p>
               <div class="contact-details">
                 <a href="mailto:info@kroebelzdigital.be" class="contact-detail"
                   ><span class="contact-detail-icon">↗</span
                   ><span
-                    ><small>EMAIL ME</small
+                    ><small data-nl="STUUR ME EEN E-MAIL" data-en="EMAIL ME"
+                      >STUUR ME EEN E-MAIL</small
                     ><strong>info@kroebelzdigital.be</strong></span
                   ></a
                 >
@@ -332,15 +486,23 @@
                   class="contact-detail"
                   ><span class="contact-detail-icon">◉</span
                   ><span
-                    ><small>MESSAGE ME ON WHATSAPP</small
+                    ><small
+                      data-nl="STUUR ME BERICHTEN OP WHATSAPP"
+                      data-en="MESSAGE ME ON WHATSAPP"
+                      >STUUR ME BERICHTEN OP WHATSAPP</small
                     ><strong>+32 497 30 67 70</strong></span
                   ></a
                 >
                 <div class="contact-detail">
                   <span class="contact-detail-icon">⌖</span
                   ><span
-                    ><small>BASED IN</small
-                    ><strong>Ingelmunster, Belgium</strong></span
+                    ><small data-nl="GEBASEERD IN" data-en="BASED IN"
+                      >GEBASEERD IN</small
+                    ><strong
+                      data-nl="Ingelmunster, België"
+                      data-en="Ingelmunster, Belgium"
+                      >Ingelmunster, België</strong
+                    ></span
                   >
                 </div>
               </div>
@@ -348,61 +510,114 @@
             <div class="col-lg-6 offset-lg-1">
               <form id="contactForm" class="contact-form">
                 <div class="form-top">
-                  <span>PROJECT ENQUIRY</span
-                  ><span class="form-required">* Required fields</span>
+                  <span data-nl="PROJECTINFORMATIE" data-en="PROJECT ENQUIRY"
+                    >PROJECTINFORMATIE</span
+                  ><span
+                    class="form-required"
+                    data-nl="* Vereiste velden"
+                    data-en="* Required fields"
+                    >* Vereiste velden</span
+                  >
                 </div>
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label for="name" class="form-label">Your name *</label
+                    <label
+                      for="name"
+                      class="form-label"
+                      data-nl="Je naam *"
+                      data-en="Your name *"
+                      >Je naam *</label
                     ><input
                       type="text"
                       class="form-control"
                       id="name"
                       name="name"
-                      placeholder="Jane Smith"
+                      placeholder="Tim Verhelst"
                       required
                     />
                   </div>
                   <div class="col-md-6">
-                    <label for="email" class="form-label">Your email *</label
+                    <label
+                      for="email"
+                      class="form-label"
+                      data-nl="Je e-mail *"
+                      data-en="Your email *"
+                      >Je e-mail *</label
                     ><input
                       type="email"
                       class="form-control"
                       id="email"
                       name="email"
-                      placeholder="jane@company.com"
+                      placeholder="tim.verhelst@outlook.com"
                       required
                     />
                   </div>
                   <div class="col-12">
-                    <label for="project" class="form-label"
-                      >What do you need?</label
+                    <label
+                      for="project"
+                      class="form-label"
+                      data-nl="Wat heb je nodig?"
+                      data-en="What do you need?"
+                      >Wat heb je nodig?</label
                     ><select class="form-select" id="project" name="project">
-                      <option value="New website">A new website</option>
-                      <option value="Website redesign">
-                        A website redesign
+                      <option
+                        value="New website"
+                        data-nl="Een nieuwe website"
+                        data-en="A new website"
+                      >
+                        Een nieuwe website
                       </option>
-                      <option value="Other project">Something else</option>
+                      <option
+                        value="Website redesign"
+                        data-nl="Een website redesign"
+                        data-en="A website redesign"
+                      >
+                        Een website redesign
+                      </option>
+                      <option
+                        value="Other project"
+                        data-nl="Iets anders"
+                        data-en="Something else"
+                      >
+                        Iets anders
+                      </option>
                     </select>
                   </div>
                   <div class="col-12">
-                    <label for="message" class="form-label"
-                      >Tell me about your project *</label
+                    <label
+                      for="message"
+                      class="form-label"
+                      data-nl="Vertel me over je project *"
+                      data-en="Tell me about your project *"
+                      >Vertel me over je project *</label
                     ><textarea
                       class="form-control"
                       id="message"
                       name="message"
                       rows="5"
-                      placeholder="A little about your idea, your business and what you have in mind..."
+                      placeholder="Een beetje over je idee, je bedrijf en wat je in gedachten hebt..."
+                      data-nl="Een beetje over je idee, je bedrijf en wat je in gedachten hebt..."
+                      data-en="A little about your idea, your business and what you have in mind..."
                       required
                     ></textarea>
                   </div>
                   <div class="col-12">
-                    <button type="submit" class="btn btn-red btn-lg w-100">
-                      Send project enquiry <span aria-hidden="true">↗</span>
+                    <button
+                      type="submit"
+                      class="btn btn-red btn-lg w-100"
+                      data-nl="Projectinformatie verzenden"
+                      data-en="Send project enquiry"
+                    >
+                      Projectinformatie verzenden
+                      <span aria-hidden="true">↗</span>
                     </button>
-                    <p class="form-note">
-                      This opens your email app with your message ready to send.
+                    <p
+                      class="form-note"
+                      data-nl="Dit opent uw e-mailapp met uw bericht klaar om te verzenden."
+                      data-en="This opens your email app with your message ready to send."
+                    >
+                      Dit opent uw e-mailapp met uw bericht klaar om te
+                      verzenden.
                     </p>
                   </div>
                 </div>
@@ -431,7 +646,7 @@
           <span
             >© <span id="year"></span> Kroebelz Digital. All rights
             reserved.</span
-          ><span>Made in Belgium by Lars Croubels.</span>
+          ><span>This is what you'll likely get.</span>
         </div>
       </div>
     </footer>
