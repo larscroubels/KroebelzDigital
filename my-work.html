@@ -1,139 +1,217 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#a20f1b" />
+    <meta name="theme-color" content="#ffffff" />
+    <title data-i18n="meta.workTitle">Mijn werk | Kroebelz Digital</title>
     <meta
       name="description"
-      content="Kroebelz Digital creates modern, responsive websites for businesses and independent professionals. Based in Ingelmunster, Belgium."
+      content="Een selectie van websites ontworpen en gebouwd door Kroebelz Digital uit Ingelmunster, België."
+      data-i18n-attr="content:meta.workDescription"
     />
-    <title>My Work | Kroebelz Digital</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Kroebelz Digital" />
+    <meta property="og:title" content="Mijn werk | Kroebelz Digital" />
     <link rel="icon" type="image/jpeg" href="assets/logo-mark.jpeg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-      <div class="container">
-        <a
-          class="navbar-brand d-flex align-items-center"
-          href="index.html"
-          aria-label="Kroebelz Digital home"
-        >
-          <img
-            src="assets/logotrans.png"
-            alt="Kroebelz Digital logo"
-            class="nav-logo-full"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#mainNav"
-          aria-controls="mainNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#about" data-nl="Wie ben ik" data-en="Who am I">Wie ben ik</a>
+    <a class="skip-link" href="#main" data-i18n="nav.skip">Naar de inhoud</a>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg fixed-top" aria-label="Hoofdmenu" data-i18n-attr="aria-label:nav.label">
+        <div class="container">
+          <a class="navbar-brand" href="index.html" aria-label="Kroebelz Digital, naar de homepage" data-i18n-attr="aria-label:nav.homePage">
+            <img src="assets/logotrans.png" alt="" class="nav-logo-full" width="720" height="193" />
+          </a>
+
+          <div class="navbar-tools order-lg-last">
+            <div class="language-switcher" role="group" aria-label="Taal kiezen" data-i18n-attr="aria-label:nav.language">
+              <button type="button" class="lang-btn" data-lang="nl" lang="nl" aria-label="Nederlands" aria-pressed="true">NL</button>
+              <button type="button" class="lang-btn" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Menu openen"
+              data-i18n-attr="aria-label:nav.toggle"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#services" data-i18n="nav.services">Diensten</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#about" data-i18n="nav.about">Over mij</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#process" data-i18n="nav.process">Werkwijze</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="my-work.html" aria-current="page" data-i18n="nav.work">Mijn werk</a>
+              </li>
+              <li class="nav-item nav-item-cta">
+                <a class="btn btn-red btn-sm" href="index.html#contact">
+                  <span data-i18n="nav.contact">Contact</span>
+                  <span class="btn-arrow" aria-hidden="true">↗</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section-pad work-section" aria-labelledby="work-title">
+        <div class="container">
+          <div class="section-heading row align-items-end gy-4">
+            <div class="col-lg-7">
+              <p class="eyebrow">Portfolio</p>
+              <h1 id="work-title" class="page-title" data-i18n-html="work.title">Mijn <em>projecten</em></h1>
+            </div>
+            <div class="col-lg-5">
+              <p class="section-intro" data-i18n="work.intro">
+                Een selectie van websites waaraan ik gewerkt heb. Klik op een project voor meer uitleg en een live voorbeeld.
+              </p>
+            </div>
+          </div>
+
+          <ul class="project-grid" role="list">
+            <li>
+              <article class="project-card" data-reveal>
+                <div class="project-media">
+                  <img
+                    src="assets/dpk.png"
+                    alt="De homepage van dpkservice op een laptop"
+                    data-i18n-attr="alt:work.dpk.imageAlt"
+                    width="1080"
+                    height="1350"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="project-body">
+                  <p class="project-tag" data-i18n="work.dpk.tag">Hobbyproject</p>
+                  <h2 class="project-title">dpkservice</h2>
+                  <p class="project-scope" data-i18n="work.dpk.scope">Webdesign · Webontwikkeling</p>
+                  <div class="project-actions">
+                    <a
+                      class="project-preview stretched-link"
+                      href="https://dpkservice.be"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      data-project-preview
+                      data-project-title="dpkservice"
+                      data-project-tag="work.dpk.tag"
+                      data-project-summary="work.dpk.summary"
+                      data-project-scope="work.dpk.scope"
+                      data-project-image="assets/dpk.png"
+                      data-project-image-alt="work.dpk.imageAlt"
+                    >
+                      <span data-i18n="work.view">Bekijk project</span>
+                      <span class="project-preview-arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a class="project-visit" href="https://dpkservice.be" target="_blank" rel="noopener noreferrer">
+                      <span data-i18n="work.visit">Bezoek website</span>
+                      <span aria-hidden="true">↗</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="my-work.html" data-nl="Mijn werk" data-en="My work">Mijn werk</a>
-            </li>
-            <li class="nav-item ms-lg-2">
-              <a class="btn btn-red btn-sm px-3 py-2" href="index.html#contact" data-nl="Contact" data-en="Contact"
-                >Contact <span aria-hidden="true">↗</span></a
-              >
-            </li>
-            <li class="nav-item ms-lg-3">
-              <div class="language-switcher">
-                <button class="lang-btn active" data-lang="nl">NL</button>
-                <span class="lang-divider">|</span>
-                <button class="lang-btn" data-lang="en">EN</button>
+            <li>
+              <div class="project-placeholder" data-reveal>
+                <span class="service-icon" aria-hidden="true">✳</span>
+                <p class="project-placeholder-title" data-i18n="work.soonTitle">Binnenkort meer</p>
+                <p data-i18n="work.soonText">Nieuwe projecten zijn in de maak.</p>
               </div>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-
-    <main>
-      <section class="section-pad" style="padding-top: 150px;">
-        <div class="container">
-          <div class="row align-items-end gy-3 mb-5">
-            <div class="col-lg-7">
-              <p class="eyebrow dark-eyebrow" data-nl="PORTFOLIO" data-en="PORTFOLIO">PORTFOLIO</p>
-              <h2 data-nl="Mijn" data-en="My">Mijn <span data-nl="projecten" data-en="projects">projecten</span></h2>
-            </div>
-          </div>
-          <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-              <div class="project-card" style="cursor: pointer; aspect-ratio: 1/1; overflow: hidden; display: flex; align-items: center; justify-content: center;" data-project="dpkservice" data-label="dpkservice - hobbyproject" data-url="https://dpkservice.be">
-                <img src="assets/dpk.png" alt="dpkservice - hobbyproject" style="width: 100%; height: 100%; object-fit: contain;">
-              </div>
-              <p style="margin-top: 15px; font-size: 14px; color: #333; text-align: center; font-weight: 500;">dpkservice - hobbyproject</p>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="project-placeholder" style="background: #f0f0f0; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
-                <p style="color: #999; font-size: 16px; margin: 0; font-weight: 500;" data-nl="Binnenkort" data-en="Coming soon">Binnenkort</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section class="section-pad services-section" id="services">
+      <section class="section-pad services-section" aria-labelledby="next-title">
         <div class="container">
-          <div class="section-heading row align-items-end gy-3">
+          <div class="section-heading row align-items-end gy-4">
             <div class="col-lg-7">
-              <p class="eyebrow dark-eyebrow" data-nl="VOLGENDE STAP" data-en="NEXT STEP">VOLGENDE STAP</p>
-              <h2 data-nl="Klaar om te beginnen" data-en="Ready to start a">
-                Klaar om te beginnen met een <span data-nl="project?" data-en="project?">project?</span>
-              </h2>
+              <p class="eyebrow" data-i18n="work.nextEyebrow">Volgende stap</p>
+              <h2 id="next-title" data-i18n-html="work.nextTitle">Klaar om je project <em>te starten?</em></h2>
             </div>
             <div class="col-lg-5">
-              <p class="section-intro" data-nl="Laten we samenwerken om iets geweldigs voor uw bedrijf te creëren." data-en="Let's work together to create something amazing for your business.">
-                Laten we samenwerken om iets geweldigs voor uw bedrijf te creëren.
+              <p class="section-intro" data-i18n="work.nextIntro">
+                Laten we samen iets bouwen waar je bedrijf echt mee vooruit kan.
               </p>
             </div>
           </div>
-          <div class="row g-3 mt-5">
-            <div class="col-12">
-              <a href="index.html#contact" class="btn btn-red" data-nl="Neem contact op" data-en="Get in touch">Neem contact op <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
+          <a href="index.html#contact" class="btn btn-red btn-lg">
+            <span data-i18n="work.nextCta">Neem contact op</span>
+            <span class="btn-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container">
-        <div class="footer-main">
-          <a href="index.html" class="footer-brand"
-            ><img src="assets/logo-mark.jpeg" alt="Kroebelz Digital logo"
-          /></a>
-          <a href="#home" class="back-top" data-nl="TERUG NAAR BOVEN ↑" data-en="BACK TO TOP ↑">TERUG NAAR BOVEN ↑</a>
+        <div class="footer-grid">
+          <div class="footer-about">
+            <a href="index.html" class="footer-brand" aria-label="Kroebelz Digital, naar de homepage" data-i18n-attr="aria-label:nav.homePage">
+              <img src="assets/logotrans.png" alt="" width="720" height="193" loading="lazy" decoding="async" />
+            </a>
+            <p class="footer-blurb" data-i18n="footer.blurb">Webdesign en webontwikkeling voor ondernemers die online willen opvallen.</p>
+          </div>
+          <nav class="footer-col" aria-labelledby="footer-nav-title">
+            <p class="footer-heading" id="footer-nav-title" data-i18n="footer.navTitle">Navigatie</p>
+            <ul class="footer-links" role="list">
+              <li><a href="index.html#services" data-i18n="nav.services">Diensten</a></li>
+              <li><a href="index.html#about" data-i18n="nav.about">Over mij</a></li>
+              <li><a href="index.html#process" data-i18n="nav.process">Werkwijze</a></li>
+              <li><a href="my-work.html" aria-current="page" data-i18n="nav.work">Mijn werk</a></li>
+            </ul>
+          </nav>
+          <div class="footer-col">
+            <p class="footer-heading" data-i18n="footer.contactTitle">Contact</p>
+            <ul class="footer-links" role="list">
+              <li><a href="mailto:info@kroebelzdigital.be">info@<wbr />kroebelzdigital.be</a></li>
+              <li><a href="https://wa.me/32497306770" target="_blank" rel="noopener noreferrer">+32 497 30 67 70</a></li>
+              <li data-i18n="contact.location">Ingelmunster, België</li>
+            </ul>
+          </div>
+          <nav class="footer-col" aria-labelledby="footer-legal-title">
+            <p class="footer-heading" id="footer-legal-title" data-i18n="footer.legalTitle">Juridisch</p>
+            <ul class="footer-links" role="list">
+              <li><a href="privacy-policy.html" data-i18n="footer.privacy">Privacybeleid</a></li>
+              <li><a href="cookie-policy.html" data-i18n="footer.cookies">Cookiebeleid</a></li>
+              <li data-js-only hidden>
+                <button type="button" class="footer-link-button" data-consent-open data-i18n="footer.preferences">Privacyvoorkeuren</button>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="footer-bottom">
-          <span
-            >© <span id="year"></span> Kroebelz Digital. All rights
-            reserved.</span
-          ><span>This is what you'll likely get.</span>
+          <p>© <span data-year>2026</span> Kroebelz Digital. <span data-i18n="footer.rights">Alle rechten voorbehouden.</span></p>
+          <a href="#top" class="back-top">
+            <span data-i18n="footer.backToTop">Terug naar boven</span>
+            <span aria-hidden="true">↑</span>
+          </a>
         </div>
       </div>
     </footer>
@@ -142,152 +220,62 @@
       class="whatsapp-float"
       href="https://wa.me/32497306770"
       target="_blank"
-      rel="noopener"
-      aria-label="Contact Lars on WhatsApp"
+      rel="noopener noreferrer"
+      aria-label="Stuur Lars een bericht via WhatsApp"
+      data-i18n-attr="aria-label:whatsapp.label"
     >
-      <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path
-          d="M16.02 3C8.85 3 3.02 8.75 3.02 15.83c0 2.26.6 4.47 1.75 6.4L3 29l7.02-1.82a13.1 13.1 0 0 0 6 1.44h.01c7.17 0 13-5.76 13-12.84 0-3.43-1.35-6.65-3.81-9.08A13.02 13.02 0 0 0 16.02 3Zm0 23.45h-.01a10.9 10.9 0 0 1-5.24-1.34l-.38-.21-4.16 1.08 1.11-4.02-.25-.41a10.55 10.55 0 0 1-1.62-5.72c0-5.83 4.74-10.57 10.56-10.57 2.82 0 5.47 1.1 7.46 3.1a10.47 10.47 0 0 1 3.1 7.46c0 5.83-4.74 10.63-10.57 10.63Zm5.8-7.95c-.32-.16-1.9-.93-2.2-1.04-.3-.1-.51-.16-.73.16-.21.32-.83 1.04-1.02 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.56-.95-.82-1.59-1.83-1.78-2.15-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.11 1.32 3.32c.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.4.19-1.53-.08-.14-.29-.22-.62-.38Z"
-        />
+      <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+        <path d="M16.02 3C8.85 3 3.02 8.75 3.02 15.83c0 2.26.6 4.47 1.75 6.4L3 29l7.02-1.82a13.1 13.1 0 0 0 6 1.44h.01c7.17 0 13-5.76 13-12.84 0-3.43-1.35-6.65-3.81-9.08A13.02 13.02 0 0 0 16.02 3Zm0 23.45h-.01a10.9 10.9 0 0 1-5.24-1.34l-.38-.21-4.16 1.08 1.11-4.02-.25-.41a10.55 10.55 0 0 1-1.62-5.72c0-5.83 4.74-10.57 10.56-10.57 2.82 0 5.47 1.1 7.46 3.1a10.47 10.47 0 0 1 3.1 7.46c0 5.83-4.74 10.63-10.57 10.63Zm5.8-7.95c-.32-.16-1.9-.93-2.2-1.04-.3-.1-.51-.16-.73.16-.21.32-.83 1.04-1.02 1.25-.19.21-.38.24-.7.08-.32-.16-1.35-.49-2.57-1.56-.95-.82-1.59-1.83-1.78-2.15-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.1-.21.05-.4-.03-.56-.08-.16-.73-1.75-1-2.4-.26-.62-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.68s1.16 3.11 1.32 3.32c.16.21 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.77 2.17-1.52.27-.75.27-1.4.19-1.53-.08-.14-.29-.22-.62-.38Z" />
       </svg>
     </a>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js"
-    ></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const projectCards = document.querySelectorAll('.project-card');
-        
-        projectCards.forEach(card => {
-          card.addEventListener('click', function() {
-            const projectName = this.getAttribute('data-label') || this.getAttribute('data-project');
-            const projectUrl = this.getAttribute('data-url');
-            openProjectModal(projectName, projectUrl);
-          });
-        });
-      });
+    <dialog class="project-dialog" id="projectDialog" aria-labelledby="projectDialogTitle">
+      <div class="project-dialog-header">
+        <div>
+          <p class="project-tag" data-dialog-text="projectTag"></p>
+          <h2 class="project-dialog-title" id="projectDialogTitle"></h2>
+        </div>
+        <button type="button" class="dialog-close" data-dialog-close aria-label="Sluiten" data-i18n-attr="aria-label:work.close">
+          <span aria-hidden="true">✕</span>
+        </button>
+      </div>
 
-      function openProjectModal(projectName, projectUrl) {
-        // Create modal overlay
-        const modal = document.createElement('div');
-        modal.id = 'projectModal';
-        modal.style.cssText = `
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.8);
-          z-index: 9999;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 20px;
-        `;
+      <div class="project-stage">
+        <div class="project-stage-media">
+          <img data-dialog-image alt="" width="1080" height="1350" decoding="async" />
+        </div>
+        <div class="project-stage-info">
+          <p class="project-stage-summary" data-dialog-text="projectSummary"></p>
+          <p class="project-stage-scope" data-dialog-text="projectScope"></p>
+          <div class="project-stage-actions">
+            <a class="btn btn-red" data-dialog-visit href="https://dpkservice.be" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="work.visit">Bezoek website</span>
+              <span class="btn-arrow" aria-hidden="true">↗</span>
+            </a>
+            <button type="button" class="btn btn-outline" data-dialog-live data-i18n="work.liveLoad">Live voorbeeld laden</button>
+          </div>
+          <p class="project-stage-note" data-dialog-live-note data-i18n="work.liveNote">
+            Het live voorbeeld laadt de echte website van een externe server, die zelf cookies kan plaatsen. Door het te laden, sta je externe media toe. Dat kun je altijd wijzigen via de privacyvoorkeuren.
+          </p>
+        </div>
+      </div>
 
-        // Create modal content
-        const modalContent = document.createElement('div');
-        modalContent.style.cssText = `
-          background: white;
-          border-radius: 8px;
-          width: 100%;
-          max-width: 1200px;
-          height: 80vh;
-          display: flex;
-          flex-direction: column;
-          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.3);
-        `;
-
-        // Create header
-        const header = document.createElement('div');
-        header.style.cssText = `
-          padding: 20px 30px;
-          border-bottom: 1px solid #e5e2df;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        `;
-
-        const title = document.createElement('h3');
-        title.textContent = projectName;
-        title.style.cssText = `
-          margin: 0;
-          font-family: Manrope, sans-serif;
-          font-weight: 800;
-          font-size: 24px;
-        `;
-
-        const headerRight = document.createElement('div');
-        headerRight.style.cssText = `
-          display: flex;
-          gap: 15px;
-          align-items: center;
-        `;
-
-        const visitBtn = document.createElement('a');
-        visitBtn.href = projectUrl;
-        visitBtn.target = '_blank';
-        visitBtn.rel = 'noopener';
-        visitBtn.className = 'btn btn-red btn-sm';
-        visitBtn.style.cssText = `
-          padding: 10px 20px;
-          text-decoration: none;
-        `;
-        visitBtn.textContent = 'Visit site ↗';
-
-        const closeBtn = document.createElement('button');
-        closeBtn.textContent = '✕';
-        closeBtn.style.cssText = `
-          background: none;
-          border: none;
-          font-size: 28px;
-          cursor: pointer;
-          color: #666;
-          padding: 0;
-          width: 30px;
-          height: 30px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        `;
-        closeBtn.onclick = () => modal.remove();
-
-        headerRight.appendChild(visitBtn);
-        headerRight.appendChild(closeBtn);
-        header.appendChild(title);
-        header.appendChild(headerRight);
-
-        // Create iframe container
-        const iframeContainer = document.createElement('div');
-        iframeContainer.style.cssText = `
-          flex: 1;
-          overflow: hidden;
-          position: relative;
-        `;
-
-        const iframe = document.createElement('iframe');
-        iframe.src = projectUrl;
-        iframe.style.cssText = `
-          width: 100%;
-          height: 100%;
-          border: none;
-        `;
-
-        iframeContainer.appendChild(iframe);
-
-        // Assemble modal
-        modalContent.appendChild(header);
-        modalContent.appendChild(iframeContainer);
-        modal.appendChild(modalContent);
-
-        // Close on outside click
-        modal.addEventListener('click', function(e) {
-          if (e.target === modal) {
-            modal.remove();
-          }
-        });
-
-        document.body.appendChild(modal);
-      }
-    </script>
+      <div class="project-live">
+        <p class="project-live-bar">
+          <span data-i18n="work.fallback">Zie je niets? Sommige websites laten zich niet in een andere pagina tonen.</span>
+          <a data-dialog-visit href="https://dpkservice.be" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="work.openTab">Open in een nieuw tabblad</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </p>
+        <iframe
+          data-dialog-frame
+          title="Live voorbeeld van de website"
+          data-i18n-attr="title:work.frameTitle"
+          sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+          referrerpolicy="no-referrer"
+        ></iframe>
+      </div>
+    </dialog>
+  </body>
+</html>
